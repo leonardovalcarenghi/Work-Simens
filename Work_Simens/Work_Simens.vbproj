@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EBE25FF-5EB3-4CD8-9243-026E73573C51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Work_Simens.My.MyApplication</StartupObject>
+    <RootNamespace>Work_Simens</RootNamespace>
+    <AssemblyName>Work_Simens</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Work_Simens.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Work_Simens.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormLayoutTest.Designer.vb">
+      <DependentUpon>FormLayoutTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLayoutTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Border.Designer.vb">
+      <DependentUpon>Border.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Border.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\FormOpenTaskBarControl.Designer.vb">
+      <DependentUpon>FormOpenTaskBarControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FormOpenTaskBarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\IconButtonControl.Designer.vb">
+      <DependentUpon>IconButtonControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IconButtonControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\MenuItemControl.Designer.vb">
+      <DependentUpon>MenuItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\MenuItemListControl.Designer.vb">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuItemListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.vb">
+      <DependentUpon>LoadingForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Employees.Designer.vb">
+      <DependentUpon>MenuSimens_Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_PDV.Designer.vb">
+      <DependentUpon>MenuSimens_PDV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_PDV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Products.Designer.vb">
+      <DependentUpon>MenuSimens_Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Sales.Designer.vb">
+      <DependentUpon>MenuSimens_Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Stock.Designer.vb">
+      <DependentUpon>MenuSimens_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuSimens_Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_PDV\CommandLinePDV.Designer.vb">
+      <DependentUpon>CommandLinePDV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_PDV\CommandLinePDV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSimens.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WorkingAreaForm.Designer.vb">
+      <DependentUpon>WorkingAreaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingAreaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormLayoutTest.resx">
+      <DependentUpon>FormLayoutTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Border.resx">
+      <DependentUpon>Border.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FormOpenTaskBarControl.resx">
+      <DependentUpon>FormOpenTaskBarControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\IconButtonControl.resx">
+      <DependentUpon>IconButtonControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuItemControl.resx">
+      <DependentUpon>MenuItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuItemListControl.resx">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuSimens_Employees.resx">
+      <DependentUpon>MenuSimens_Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuSimens_PDV.resx">
+      <DependentUpon>MenuSimens_PDV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuSimens_Products.resx">
+      <DependentUpon>MenuSimens_Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuSimens_Sales.resx">
+      <DependentUpon>MenuSimens_Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuSimens_Stock.resx">
+      <DependentUpon>MenuSimens_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_PDV\CommandLinePDV.resx">
+      <DependentUpon>CommandLinePDV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingAreaForm.resx">
+      <DependentUpon>WorkingAreaForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper#BackgroundLoginScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper#BackgroundWorkingArea01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper#BackgroundWorkingArea02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper#BackgroundWorkingArea03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_Products_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_Stock_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_contributors_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_Pdvs_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_Nfce_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_NewProduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_RemoteControl_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Settings_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_ManagerDevices_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_ManagerProducts_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_ProductBox_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_BarCode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Hands_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Factory_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Weight_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Family_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#CloseMenu_Normal_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#CloseMenu_Down_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#CloseMenu_Enter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_AddUser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Users_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_User_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#User_White_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_MinimizeSystem_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_ChangeUser_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_Dropbox_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_CloundError_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_CloundOk_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Sales_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_PdvValues_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuList_Counts_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#FormSimens_MinimizeForm_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#WindowApplication_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_MaximizeApp_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SimensBar_NormalSizeApp_18x18.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
